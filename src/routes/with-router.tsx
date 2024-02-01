@@ -1,8 +1,8 @@
 import router from './routes'
-import { RouterProvider, createBrowserRouter } from 'react-router-dom'
+import { RouterProvider, createHashRouter } from 'react-router-dom'
 
 const RoutesProvider = () => {
-  return <RouterProvider router={createBrowserRouter(router)}></RouterProvider>
+  return <RouterProvider router={createHashRouter(router)}></RouterProvider>
 }
 
 export default RoutesProvider
