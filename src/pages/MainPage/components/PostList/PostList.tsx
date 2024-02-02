@@ -1,7 +1,13 @@
 import * as S from './PostList.style'
 import { useSelector } from 'react-redux'
 import UiCard from 'src/components/UiCard/UiCard'
-import { filters } from 'src/api/reducer/cardsReducer'
+
+type PostType = {
+  id: number
+  title: string
+  completed: boolean
+  body: string
+}
 
 export default function PostList() {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -9,19 +15,14 @@ export default function PostList() {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const filter = useSelector((store: any) => store.post.FilterPost)
 
-  const filteredList = () => {
-    if (filter === filters.LIKED) {
-      return posts.filter((post: { completed: boolean }) => post.completed)
-    }
-
-    return posts
-  }
+  const filteredList = filter
+    ? posts.filter((post: { completed: boolean }) => post.completed)
+    : posts
 
   return (
     <S.PostListWrapper>
       {posts ? (
-        // eslint-disable-next-line @typescript-eslint/no-explicit-any
-        filteredList().map((post: any) => <UiCard key={post.id} {...post} />)
+        filteredList.map((post: PostType) => <UiCard key={post.id} {...post} />)
       ) : (
         <p>Loading...</p>
       )}

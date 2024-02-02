@@ -23,7 +23,7 @@ export default function UiCard({ id, title, completed, body }: Props) {
         <img src={del} width="20px" height="20px" />
       </S.ImageWrapper>
       <S.PostInfoWrapper onClick={() => navigate(`/more/${id}`)}>
-        <S.PostCardTitle>{title}</S.PostCardTitle>
+        <S.PostCardTitle>{title?.slice(0, 10)}</S.PostCardTitle>
         <p>
           {body?.slice(0, 50)} <span>...</span> <br />
         </p>

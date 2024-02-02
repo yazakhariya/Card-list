@@ -1,16 +1,11 @@
 import { createSlice } from '@reduxjs/toolkit'
 import { PayloadType } from './types'
 
-export const filters = {
-  ALL: 'ALL',
-  LIKED: 'LIKED',
-}
-
 const todoSlice = createSlice({
   name: 'posts',
   initialState: {
     post: [],
-    FilterPost: filters.ALL,
+    FilterPost: false,
   },
   reducers: {
     PostsReceived(store, action) {
@@ -30,8 +25,8 @@ const todoSlice = createSlice({
         toggledTodo.completed = !toggledTodo.completed
       }
     },
-    FilterPost(store, action) {
-      store.FilterPost = action.payload
+    FilterPost(store) {
+      store.FilterPost = !store.FilterPost
     },
   },
 })

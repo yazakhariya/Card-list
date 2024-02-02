@@ -65,4 +65,5 @@ export const LikeButton = styled.div`
 
 export const PostCardTitle = styled.span`
   color: #aaaaaa;
+  margin-bottom: 10px;
 `

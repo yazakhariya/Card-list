@@ -1,34 +1,35 @@
 import { styled } from 'styled-components'
 
 export const MainWrapper = styled.div`
-  min-height: 100vh;
-  width: 100%;
+  height: 100vh;
   background-color: #fef7f5;
   padding: 50px;
 `
 
-export const PostInfoWrapper = styled.div<{ open?: boolean }>`
+export const PostInfoWrapper = styled.div`
   padding: 15px;
   display: flex;
   flex-direction: column;
-  ${(props) => (props.open === true ? `width: 400px;` : `width: 300px;`)}
+  width: 600px;
   text-align: justify;
 
   // tablet version
   @media (max-width: 1024px) {
-    ${(props) => (props.open === true ? `width: 375px;` : `width: 275px;`)}
+    width: 100%px;
   }
 
   // mobile version
   @media (max-width: 768px) {
-    ${(props) => (props.open === true ? `width: 350px;` : `width: 250px;`)}
+    width: 100%;
   }
 `
 
 export const ImageWrapper = styled.div`
   cursor: pointer;
+  width: fit-content;
 `
 
 export const PostCardTitle = styled.span`
   color: #aaaaaa;
+  margin-bottom: 10px;
 `
