@@ -5,6 +5,8 @@ SPA проект со списком карточек, пришедшие дан
 ## Deploy:
 https://card-list-tan.vercel.app/
 
+https://yazakhariya.github.io/Card-list/
+
 ## Stack:
 
 - React
