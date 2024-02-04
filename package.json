@@ -1,8 +1,8 @@
 {
+  "homepage": "https://yazakhariya.github.io/Card-list/",
   "name": "card-list",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://yazakhariya.github.io/Card-list/",
   "type": "module",
   "scripts": {
     "predeploy" : "npm run build",
