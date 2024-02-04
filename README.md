@@ -3,9 +3,9 @@
 SPA проект со списком карточек, пришедшие данные хранятся в сторе, есть функции лайка, удаления карточек, переход на страницы отдельных карточек и фильтрация.
 
 ## Deploy:
-https://card-list-tan.vercel.app/
-
 https://yazakhariya.github.io/Card-list/
+
+https://card-list-tan.vercel.app/
 
 ## Stack:
 
