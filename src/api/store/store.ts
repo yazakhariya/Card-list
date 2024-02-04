@@ -1,5 +1,5 @@
 import {configureStore} from '@reduxjs/toolkit';
-import postReducer from 'src/api/reducer/cardsReducer';
+import postReducer from '../reducer/cardsReducer'
 import { jsonPlaceholderApi } from '../actionCreator/fetchApi'
 
 export default configureStore({

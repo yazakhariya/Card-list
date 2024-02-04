@@ -1,6 +1,6 @@
+import UiCard from '../../../../components/UiCard/UiCard'
 import * as S from './PostList.style'
 import { useSelector } from 'react-redux'
-import UiCard from 'src/components/UiCard/UiCard'
 
 type PostType = {
   id: number

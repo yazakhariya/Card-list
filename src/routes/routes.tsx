@@ -1,9 +1,7 @@
 import { RouteObject } from 'react-router-dom'
-import PostPage from 'src/pages/PostPage/PostPage'
-import MainPage from 'src/pages/MainPage/MainPage'
-import NotFound from 'src/pages/NotFound/NotFound'
-
-
+import MainPage from '../pages/MainPage/MainPage'
+import PostPage from '../pages/PostPage/PostPage'
+import NotFound from '../pages/NotFound/NotFound'
 
 const router: RouteObject[] = [
    {

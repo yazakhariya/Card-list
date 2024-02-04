@@ -1,7 +1,7 @@
 import * as S from './PostPage.style'
 import { useSelector } from 'react-redux'
 import { useNavigate, useParams } from 'react-router-dom'
-import ret from 'src/assets/return-svgrepo-com.svg'
+import ret from '../../assets/return-svgrepo-com.svg'
 
 export default function PostPage() {
   const navigate = useNavigate()

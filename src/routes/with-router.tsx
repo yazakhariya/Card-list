@@ -1,4 +1,4 @@
-import { GlobalStyle } from 'src/theme/global.style'
+import { GlobalStyle } from '../theme/global.style'
 import router from './routes'
 import { RouterProvider, createHashRouter } from 'react-router-dom'
 

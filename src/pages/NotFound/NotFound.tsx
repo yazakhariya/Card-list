@@ -1,5 +1,5 @@
 import * as S from './NotFound.style'
-import loader from 'src/assets/loader.svg'
+import loader from '../../assets/loader.svg'
 
 export default function NotFound() {
   return (

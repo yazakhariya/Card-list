@@ -1,6 +1,7 @@
+import { FilterPost } from '../../../../api/reducer/cardsReducer'
 import * as S from './Filters.style'
 import { useDispatch } from 'react-redux'
-import { FilterPost } from 'src/api/reducer/cardsReducer'
+
 
 export default function Filters() {
   const dispatch = useDispatch()

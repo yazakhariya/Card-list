@@ -1,10 +1,10 @@
 import * as S from './UiCard.style'
 import { useDispatch } from 'react-redux'
-import { DeletePost, LikePost } from 'src/api/reducer/cardsReducer'
 import { useNavigate } from 'react-router-dom'
-import del from 'src/assets/delete-svgrepo-com.svg'
-import like from 'src/assets/like-svgrepo-com.svg'
-import liked from 'src/assets/like-svgrepo-com (1).svg'
+import del from '../../assets/delete-svgrepo-com.svg'
+import like from '../../assets/like-svgrepo-com.svg'
+import liked from '../../assets/like-svgrepo-com (1).svg'
+import { DeletePost, LikePost } from '../../api/reducer/cardsReducer'
 
 type Props = {
   id: number
